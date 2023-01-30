@@ -1,5 +1,9 @@
-// This program demonstrates a problem that occurs
-// when you mix cin >> with cin.get().
+// Ch 2 Variables and constants notes
+// Coded by: Melissa Goodall
+// Date:  1/30/2023
+// Version 1.0     
+
+
 #include <iostream>
 #include <iomanip>
 using namespace std;
