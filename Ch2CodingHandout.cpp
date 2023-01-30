@@ -12,20 +12,20 @@ int main()
 	
 	//DECLARING A VARIABLE
 	cout << "\n\n";
-	int number;																	//declare an integer variable identified as 'number;
-	number = 5;																	//use assignment operator to assign the value of 5 to number's memory address
-	cout << "The value in number is " << number << endl;						//print out what is stored currently at number's memory address
+	int number;							//declare an integer variable identified as 'number;
+	number = 5;							//use assignment operator to assign the value of 5 to number's memory address
+	cout << "The value in number is " << number << endl;		//print out what is stored currently at number's memory address
 	
 	//INITIALIZING A VARIABLE
 	cout << "\n\n";
-	int month = 2, days = 28;													//using assignment operator to give an initial value is recommended practice
+	int month = 2, days = 28;					//using assignment operator to give an initial value is recommended practice
 	cout << "Month " << month << " has " << days << " days.\n";
 	
 	//EXAMPLES OF INTEGERS
 	cout << "\n\n";
 	int checking;
-	unsigned int miles;															//unsigned integers cannot be negative
-	long diameter;																//longs are integers greater than approximately 65,000
+	unsigned int miles;						//unsigned integers cannot be negative
+	long diameter;							//longs are integers greater than approximately 65,000
 	checking = -20;
 	miles = 4276;
 	diameter = 100000;
@@ -37,29 +37,29 @@ int main()
 	
 	//EXAMPLES OF FLOATING
 	cout << "\n\n";
-	float distance;																//decimals are not stored the same as integer in memory
-	double mass;																//the decimal is converted to scientific notation, then stored
-	distance = 1.495979E11;														//so the decimal "floats"
+	float distance;							//decimals are not stored the same as integer in memory
+	double mass;							//the decimal is converted to scientific notation, then stored
+	distance = 1.495979E11;						//so the decimal "floats"
 	mass = 1.989E30;
 	cout << "The Sun is " << distance << " meters away.\n";
 	cout << "The Sun\'s mass is " << mass << " kilograms.\n";
 	
 	//EXAMPLE PERCENTAGE CALCULATIONS
 	cout << "\n\n";
-	double monthlyPay = 6000.0, contribution;									//Variables to hold the monthly pay and the amount of contribution.
-		contribution = monthlyPay * 0.05;										// Calculate and display a 5 % contribution.
-		cout << "5 percent is $" << contribution << " per month.\n";
+	double monthlyPay = 6000.0, contribution;			//Variables to hold the monthly pay and the amount of contribution.
+		contribution = monthlyPay * 0.05;			// Calculate and display a 5 % contribution.
+	cout << "5 percent is $" << contribution << " per month.\n";
 		
 	//EXAMPLE OF PERCENTAGES IN A RANGE
 	cout << "\n\n";
-	float lowerLimit = monthlyPay - (monthlyPay * 0.05);						//calculate 5% below the monthly pay
-	float upperLimit = monthlyPay * 1.05;										//calculates 5% above the monthly pay
+	float lowerLimit = monthlyPay - (monthlyPay * 0.05);		//calculate 5% below the monthly pay
+	float upperLimit = monthlyPay * 1.05;				//calculates 5% above the monthly pay
 	cout << "Range of monthly pay could be between "
 		<< lowerLimit << " and " << upperLimit << endl;
 	
 	//EXAMPLE OF PROPERLY USED CONSTANTS
 	cout << "\n\n";
-	const double PI = 3.14159;													//if the number is set for life of program, it's a constant
+	const double PI = 3.14159;					//if the number is set for life of program, it's a constant
 	const double CIRCLE_DIAMETER = 10.0;
 	double circumference;
 	circumference = PI * CIRCLE_DIAMETER;
@@ -70,7 +70,7 @@ int main()
 	char letter;
 	letter = 'A';
 	cout << letter << '\n';
-	cout << "letter as integer: " << (int)letter << endl;						//characters are considered integers due to their ASCII equivalent
+	cout << "letter as integer: " << (int)letter << endl;		//characters are considered integers due to their ASCII equivalent
 	int numericLetter = 66;
 	cout << (char)numericLetter << endl;
 	
@@ -96,32 +96,32 @@ int main()
 	boolValue = true;
 	cout << boolValue << endl;
 	boolValue = false;
-	cout << boolValue << endl;													//print out the value
-	cout << !boolValue << endl;													//example of using the NOT operator to look to see if NOT true
+	cout << boolValue << endl;					//print out the value
+	cout << !boolValue << endl;					//example of using the NOT operator to look to see if NOT true
 
 
 
 	//COMPLETE PROGRAM
 	cout << "\n\n";
-	double regularWages,														//notice the alignment of variables and comments?
+	double regularWages,						//notice the alignment of variables and comments?
 		   basePayRate = 18.25,	
 		   regularHours = 40.0,	
 		   overtimeWages,		
 		   overtimePayRate = 27.78,	
 		   overtimeHours = 10,	
 	       totalWages;		
-	regularWages = basePayRate * regularHours;									// Calculate the  regular wages.
-		overtimeWages = overtimePayRate * overtimeHours;						// Calculate the overtime wages.
-		totalWages = regularWages + overtimeWages;								// Calculate the total wages.
-		cout << "Wages for this week are $" << totalWages << endl;				// Display the total wages.
+	regularWages = basePayRate * regularHours;			// Calculate the  regular wages.
+		overtimeWages = overtimePayRate * overtimeHours;	// Calculate the overtime wages.
+		totalWages = regularWages + overtimeWages;		// Calculate the total wages.
+	cout << "Wages for this week are $" << totalWages << endl;	// Display the total wages.
 		
 	//MODULUS
 		cout << "\n\n";
 	int totalSeconds = 125;
 	int minutes, seconds;
-	minutes = totalSeconds / 60;												// Get the number of minutes.
-		seconds = totalSeconds % 60;											// Get the remaining seconds.
-		cout << totalSeconds << " is equivalent to:\n";							// Display the results.
+	minutes = totalSeconds / 60;					// Get the number of minutes.
+		seconds = totalSeconds % 60;				// Get the remaining seconds.
+		cout << totalSeconds << " is equivalent to:\n";		// Display the results.
 		cout << "Minutes: " << minutes << endl;
 	cout << "Seconds: " << seconds << endl;
 	
