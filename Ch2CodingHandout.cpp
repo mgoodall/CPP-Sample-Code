@@ -5,7 +5,8 @@
 
 
 #include <iostream>
-#include <iomanip>
+#include <locale>                                                      //used  for inserting commas in longer numbers
+
 using namespace std;
 int main()
 {
@@ -132,6 +133,20 @@ int main()
 	cout << "The rightmost digit in "
 		<< number << " is "
 		<< rightMost << endl;
+	
+	//format output using printf
+	printf("Characters: %c %c \n", 'a', 65);
+	printf("Decimals: %d %ld\n", 1977, 650000L);
+	printf("Preceding with blanks: %10d \n", 1977);
+	printf("Preceding with zeros: %010d \n", 1977);
+	printf("Some different radices: %d %x %o %#x %#o \n", 100, 100, 100, 100, 100);
+	printf("floats: %4.2f %+.0e %E \n", 3.1416, 3.1416, 3.1416);
+	printf("Width trick: %*d \n", 5, 10);
+	printf("%s \n", "A string");
+	printf("$%.2Lf\n", 123456.45L);
+	cout.imbue(std::locale(""));					//uses locale library to know how to format decimals with commas
+	cout <<  123456.45L;						//cannot printf with commas unless you get an external library file
+	
 	cin.ignore(100, '\n');
 	cin.get();
 	return 0;
