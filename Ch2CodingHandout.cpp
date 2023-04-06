@@ -147,6 +147,27 @@ int main()
 	cout.imbue(std::locale(""));					//uses locale library to know how to format decimals with commas
 	cout <<  123456.45L;						//cannot printf with commas unless you get an external library file
 	
+	//swapping two variables using a PLACEHOLDER variable
+	int variableOne = 19;
+	int variableTwo = 2;
+	int tempPlaceholder = 0;
+
+	cout << "Before:  Variable 1:  " << variableOne << "   Variable 2:  " << variableTwo << endl;
+	tempPlaceholder = variableTwo;
+	variableTwo = variableOne;
+	variableOne = tempPlaceholder;
+	cout << "After:  Variable 1:  " << variableOne << "   Variable 2:  " << variableTwo << endl;
+
+	//swapping two variables without a placeholder variable
+	int variableOne = 19;
+	int variableTwo = 2;
+	
+	cout << "Before:  Variable 1:  " << variableOne << "   Variable 2:  " << variableTwo << endl;
+	variableOne = variableOne + variableTwo;
+	variableTwo = variableOne - variableTwo;
+	variableOne = variableOne - variableTwo;
+	cout << "After:  Variable 1:  " << variableOne << "   Variable 2:  " << variableTwo << endl;
+
 	cin.ignore(100, '\n');
 	cin.get();
 	return 0;
