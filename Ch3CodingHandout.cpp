@@ -179,10 +179,10 @@ int main()
 	random_device engine; // Random number engine
 	std::random_device rand_dev; // Distribution object
 	std::mt19937 generator(rand_dev());
-	std::uniform_int_distribution<int> random(MIN, MAX);
+	std::uniform_int_distribution<int> dist(MIN, MAX);
 	cout << "Rolling the dice...\n";
-	cout << random(generator) << endl; //generator
-	cout << random(generator) << endl;
+	cout << dist(generator) << endl; //generator
+	cout << dist(generator) << endl;
 	//IOMANIP SET PRECISION
 	cout << "\n\n";
 	double quotient, number1 = 132.364, number2 = 26.91;
